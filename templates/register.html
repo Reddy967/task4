@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+<div class="login">
+    <div class="form">
+        <form class="login-form" method="POST">
+            {% csrf_token %}
+            <span class="materials-icons">Register</span>
+            <input class="text" name="email" placeholder="Email" required>
+            <input class="text" name="first_name" placeholder="FirstName" required>
+            <input class="text" name="last_name" placeholder="LastName" required>
+            <input class="text" name="gender" placeholder="Gender" required>
+            <input class="text" name="phone_number" placeholder="PhoneNumber" required>
+            <button>Register</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
